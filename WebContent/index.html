@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel = "stylesheet" href = "css/style.css"></link>
+</head>
+<body>
+	<h1> Serveral Practices on Servlets</h1>
+	<h2> Exercise 1 Welcome Message</h2>
+	
+	<form action="WelcomeServlet" method = "post">
+	<!-- value its the text that will show in the button -->
+		<input type="submit" value="Show Message">
+	</form>
+	<hr/>
+	<h2>Exercise 2 Tunned Welcome Message</h2>
+	<form class="form-group" action="TunnedWelcomeServlet" method="post">
+		<p>
+			<label for="xtMessage"> Message:</label>
+			<!-- 'id' front 'name' back -->
+			<input class="form-control" type="text" id="txtMessage" name="txtMessage"></input>
+		</p>
+		<input class="btn btn-sucess" type="submit" value="Show Tunned Message">
+	</form>
+	
+	<h2> Exercise 3 Addition of two numbers</h2>
+	<!-- Establecer la direccion de destino -->
+	<form class="form-group" action="AdditionTwoNumersServets" method = "post">
+		<p>
+			<label for="txtNumber1"> Input a number: </label>
+			<input class="form-control" type="text" id="txtNumber1" name="txtNumber1">
+		</p>
+		
+		<p>
+			<label for="txtNumber2"> Input a number: </label>
+		<input class="form-control" type="text" id="txtNumber2" name="txtNumber2">
+		</p>
+		
+		<input class="btn btn-sucess" type="submit" value="Add Both Numbers">
+	</form>
+	
+	<h2> Exercise 4 Cousin</h2>
+	<form class="forma-group" action="PrimeNumberServlet" method="post">
+		<p>
+			<label for="txtNumberEx3"> Input a number; </label>
+			<input class="form-control" type="text" id="txtNumberEx3" name="txtNumberEx3">
+		</p>
+		<!--  <input class="btn btn-sucess" type="submit" value="Check number"> -->
+		<button type="submit" class="btn btn-outline-danger waves-effect">Check number</button>
+	</form>
+	
+	
+	
+	
+	<!-- Charging bootstrap -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
